@@ -1,31 +1,22 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
+"set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
+"alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'octol/vim-cpp-enhanced-highlight'
-Plugin 'valloric/youcompleteme'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'benmills/vimux'
 Plugin 'majutsushi/tagbar'
-Plugin 'townk/vim-autoclose'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'wincent/command-t'
-"Plugin 'ryanoasis/nerd-fonts'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-"Plugin 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,10 +38,10 @@ set background=dark    " Setting dark mode
 syntax on
 set t_Co=256
 
-"Show line number
+" Show line number
 set number
 set ruler
-"Set highlight search
+" Set highlight search
 set hlsearch
 noremap <F4> :set hlsearch! hlsearch?<CR>
 
@@ -84,10 +75,7 @@ set smarttab
 set expandtab
 
 " Always display the status line
- set laststatus=2
-
-" Enable Elite mode, No ARRRROWWS!!!!
-let g:elite_mode=1
+set laststatus=2
 
 " Enable highlighting of the current line
 set cursorline
@@ -95,15 +83,3 @@ set cursorline
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='deus'
-
-" Devicons config
-"set encoding=UTF-8
-
-" Fonts config
-"set guifont=Font\ Awesome\ 14
-
-" Commant-T config
-let g:CommandTFileScanner='watchman'
-let g:CommandTMaxFiles=180000
-
-
